@@ -37,11 +37,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-# try:
-#         button = driver.find_element_by_class_name("btn-primary")
-#         button.click()
-#         time.sleep(3)
-#     except NoSuchElementException:
-#         print("Не нашел данный элемент")
