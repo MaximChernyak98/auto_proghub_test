@@ -2,9 +2,7 @@ import configparser
 import os
 
 config = configparser.RawConfigParser()
-current_dir = os.getcwd()
-path_to_config_ini = os.path.join(current_dir, '..', 'configurations', 'config.ini')
-config.read(path_to_config_ini)
+config.read('.\\configurations\\config.ini')
 
 
 class ReadConfig:
