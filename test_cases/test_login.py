@@ -13,8 +13,7 @@ class Test_001_Login:
 
     logger = LogGen.loggen()
 
-    current_dir = os.getcwd()
-    path_to_screenshots = os.path.join(current_dir, '..', 'screenshots')
+    path_to_screenshots = os.path.join('.', 'screenshots')
 
     def test_home_page_title(self, setup):
         self.logger.info("***Test_001_Login***")
@@ -43,7 +42,7 @@ class Test_001_Login:
         self.lp.set_password(self.password)
         self.lp.click_login_button()
         actual_title = self.driver.title
-        if actual_title == "Dashboard / nopCommerce administration":
+        if actual_title == "Dashboard / nopCommerce administration1":
             self.logger.info("*** Login test is passed ***")
             self.driver.close()
             assert True
