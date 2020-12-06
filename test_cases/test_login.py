@@ -13,6 +13,8 @@ class Test_001_Login:
 
     logger = LogGen.loggen()
 
+    path_to_screenshots = os.path.join('.', 'screenshots')
+
     def test_home_page_title(self, setup):
         self.logger.info("***Test_001_Login***")
         self.logger.info("***Verifying Home Page Title***")

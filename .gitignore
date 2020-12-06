@@ -2,6 +2,7 @@
 chromedriver.exe
 .vscode/
 .idea
+*.png
 
 
 # Byte-compiled / optimized / DLL files
