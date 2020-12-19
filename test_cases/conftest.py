@@ -40,6 +40,8 @@ def browser_with_options(browser):
     else:
         driver = webdriver.Chrome(chrome_options=browser_options)
 
+    return driver
+
 
 @pytest.fixture()
 def setup(browser):
